@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+        .btn{
+            @apply border-transparent rounded-md py-1 px-2.5 bg-btn-color-primary text-secundary-color hover:bg-btn-color-secondary hover:text-white transition duration-200;
+        }
+}
