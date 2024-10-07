@@ -15,7 +15,7 @@ module.exports = {
         'extra-color':'#74c0fc'
       },
       backgroundImage:{
-        'banner-curso': "url('/proyecto01/src/images/banner-curso-home.jpg')",
+        'banner-curso': "url('https://res.cloudinary.com/dxnx6awui/image/upload/v1728301083/vlzoggbev4dgzvrpjpzu.jpg')",
       }
     },
   },
