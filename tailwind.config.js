@@ -15,7 +15,7 @@ module.exports = {
         'extra-color':'#74c0fc'
       },
       backgroundImage:{
-        'banner-curso': "url('/src/images/banner-curso-home.jpg')",
+        'banner-curso': "url('/proyecto01/src/images/banner-curso-home.jpg')",
       }
     },
   },
