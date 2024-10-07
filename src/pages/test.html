@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4cc1d373f1.js" crossorigin="anonymous"></script>
+    <title>Planes | Guimarbot</title>
+</head>
+<body>
+     <!-- Barra Nav -->
+     <header class="bg-secundary-color">
+        <nav class="container mx-auto flex justify-around sm:justify-between items-center">
+            <!-- Logo -->
+            <a href="../../index.html" class="flex items-center" >
+                <img src="../images/logo_color_white.svg" class="h-20">
+                <p class="text-light-color text-2xl font-vitneam ">GuímarBot</p>
+            </a>
+    
+            <!-- Menu Hamburguesa  -->
+            <button class="flex md:hidden" onclick="toggleMenu();">
+                <img src="../images/burger-menu-white.svg" class="h-12" alt="menu">
+            </button>
+    
+            <!-- Menu -->
+            <ul id="menu" class="md:flex hidden pt-4 flex-grow md:flex-grow-0 gap-x-8 text-2xl md:justify-center md:items-center absolute md:relative md:top-0 top-20 
+            left-0 bg-secundary-color w-full h-screen md:h-auto md:w-auto py-14 md:py-0 px-8 text-center md:text-left">
+                <li class="mb-4 md:mb-0"><a href="../../index.html" class="text-white hover:text-btn-color-primary transition duration-200">Inicio</a></li>
+                <li class="mb-4 md:mb-0"><a href="cursos.html" class="text-white hover:text-btn-color-primary transition duration-200">Cursos</a></li>
+                <li class="mb-4 md:mb-0"><a href="planes.html" class="text-white hover:text-btn-color-primary transition duration-200">Planes</a></li>
+                <li><a href="login.html" class="btn">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Planes -->
+
+    <section class="bg-gradient-to-br from-secundary-color via-secundary-color to-primary-color w-full h-auto font-montserrat">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h3 class="text-5xl text-light-color font-montserrat  font-bold text-center py-8">Forma parte de GuimCodeX</h3>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <!-- Basico -->
+            <div class="p-4 xl:w-1/3 md:w-1/2 w-full">
+                <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                  <h3 class="text-sm tracking-widest title-font mb-1  text-extra-color font-bold">Básico</h3>
+                  <h2 class="text-5xl text-light-color leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                    <span>s/199.99</span>
+                    <span class="text-lg ml-1 text-light-color font-bold">/anual</span>
+                  </h2>
+                  <p class="flex items-center text-light-color mb-2">
+                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-extra-color text-light-color rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>
+                    Acceso para 1 estudiante
+                  </p>
+                  <p class="flex items-center text-light-color mb-2">
+                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-extra-color text-light-color rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>
+                    Acceso a todos los cursos
+                  </p>
+                  <p class="flex items-center text-light-color mb-2">
+                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-extra-color text-light-color rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>
+                    Certificados de Finalización
+                  </p>
+                  <p class="flex items-center text-light-color mb-8">
+                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-extra-color text-light-color rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>
+                    Soporte en menos de 24 horas
+                  </p>
+                  <button class="flex items-center mt-auto text-white bg-extra-color font-bold border-0 py-2 px-4 w-full focus:outline-none hover:bg-btn-color-primary hover:text-secundary-color rounded transition duration-400">Comprar
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+                  <p class="text-xs text-gray-500 mt-3">&nbsp;</p>
+                </div>
+            </div>
+            <!-- Duo -->
+            <div class="p-4 xl:w-1/3 md:w-1/2 w-full">
+                <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                  <h3 class="text-sm tracking-widest title-font mb-1  text-extra-color font-bold">Dúo</h3>
+                  <h2 class="text-5xl text-light-color leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                    <span>s/349.99</span>
+                    <span class="text-lg ml-1 text-light-color font-bold">/anual</span>
+                  </h2>
+                  <p class="flex items-center text-light-color mb-2">
+                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-extra-color text-light-color rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>
+                    Acceso para 2 estudiante
+                  </p>
+                  <p class="flex items-center text-light-color mb-2">
+                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-extra-color text-light-color rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>
+                    Acceso a todos los cursos
+                  </p>
+                  <p class="flex items-center text-light-color mb-2">
+                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-extra-color text-light-color rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>
+                    Certificados de Finalización
+                  </p>
+                  <p class="flex items-center text-light-color mb-8">
+                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-extra-color text-light-color rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>
+                    Soporte en menos de 24 horas
+                  </p>
+                  <button class="flex items-center mt-auto text-white bg-extra-color font-bold border-0 py-2 px-4 w-full focus:outline-none hover:bg-btn-color-primary hover:text-secundary-color rounded transition duration-400">Comprar
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+                  <p class="text-xs text-light-color font-bold mt-3">Ahorras un 33.33%</p>
+                </div>
+            </div>
+            <!-- Familiar -->
+            <div class="p-4 xl:w-1/3 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                <h3 class="text-sm tracking-widest title-font mb-1  text-extra-color font-bold">Familiar</h3>
+                <h2 class="text-5xl text-light-color leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                    <span>s/499.99</span>
+                    <span class="text-lg ml-1 text-light-color font-bold">/anual</span>
+                </h2>
+                <p class="flex items-center text-light-color mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-extra-color text-light-color rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                </span>
+                Acceso para 4 estudiante
+                </p>
+                <p class="flex items-center text-light-color mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-extra-color text-light-color rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                </span>
+                Acceso a todos los cursos
+                </p>
+                <p class="flex items-center text-light-color mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-extra-color text-light-color rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                </span>
+                Certificados de Finalización
+                </p>
+                <p class="flex items-center text-light-color mb-8">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-extra-color text-light-color rounded-full flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                </span>
+                Soporte en menos de 24 horas
+                </p>
+                <button class="flex items-center mt-auto text-white bg-extra-color font-bold border-0 py-2 px-4 w-full focus:outline-none hover:bg-btn-color-primary hover:text-secundary-color rounded transition duration-400">Comprar
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+                  <p class="text-xs text-light-color font-bold mt-3">Ahorras un 33.33%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4cc1d373f1.js" crossorigin="anonymous"></script>
     <title>Planes | Guimarbot</title>
 </head>
@@ -16,33 +15,33 @@
     <header class="bg-secundary-color">
         <nav class="container mx-auto flex justify-around sm:justify-between items-center">
             <!-- Logo -->
-            <a href="../../index.html" class="flex items-center" >
+            <a href="../../index.html"  class="flex items-center" >
                 <img src="../images/logo_color_white.svg" class="h-20">
-                <p class="text-light-color text-2xl font-vitneam ">GuímarBot</p>
+                <p class="text-light-color text-2xl font-montserrat font-normal">GuímarBot</p>
             </a>
     
             <!-- Menu Hamburguesa  -->
-            <button class="flex md:hidden" onclick="toggleMenu();">
+            <button class="flex lg:hidden" onclick="toggleMenu();">
                 <img src="../images/burger-menu-white.svg" class="h-12" alt="menu">
             </button>
     
             <!-- Menu -->
-            <ul id="menu" class="md:flex hidden pt-4 flex-grow md:flex-grow-0 gap-x-8 text-2xl md:justify-center md:items-center absolute md:relative md:top-0 top-20 
-            left-0 bg-secundary-color w-full h-screen md:h-auto md:w-auto py-14 md:py-0 px-8 text-center md:text-left">
-                <li class="mb-4 md:mb-0"><a href="../../index.html" class="text-white hover:text-btn-color-primary transition duration-200">Inicio</a></li>
-                <li class="mb-4 md:mb-0"><a href="cursos.html" class="text-white hover:text-btn-color-primary transition duration-200">Cursos</a></li>
-                <li class="mb-4 md:mb-0"><a href="planes.html" class="text-white hover:text-btn-color-primary transition duration-200">Planes</a></li>
+            <ul id="menu" class="lg:flex hidden pt-4 flex-grow lg:flex-grow-0 gap-x-8 text-2xl lg:justify-center lg:items-center absolute lg:relative lg:top-0 top-20 
+            left-0 bg-secundary-color w-full h-screen lg:h-auto lg:w-auto py-14 lg:py-0 px-8 text-center lg:text-left">
+                <li class="mb-7 lg:mb-0"><a href="../../index.html" class="font-montserrat font-normal text-white hover:text-btn-color-primary transition duration-200">Inicio</a></li>
+                <li class="mb-7 lg:mb-0"><a href="cursos.html" class="font-montserrat font-normal text-white hover:text-btn-color-primary transition duration-200">Cursos</a></li>
+                <li class="mb-7 lg:mb-0"><a href="planes.html" class="font-montserrat font-normal text-white hover:text-btn-color-primary transition duration-200">Planes</a></li>
                 <li><a href="login.html" class="btn">Iniciar Sesión</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Principal Planes -->
-    <section class="bg-light-color w-full h-auto"> 
+    <section class="bg-light-color w-full h-auto font-montserrat"> 
         <div class="container mx-auto h-auto flex justify-center items-center mb-8">
             <div class="w-3/4">
-                <h3 class="text-5xl text-secundary-color font-vitneam font-bold text-center py-8">ACCEDE A TODOS NUESTROS CURSOS</h3>
-                <p class="text-3xl text-btn-color-secondary font-vitneam text-center mb-8"> Elige la opción que mejor se adapte a ti</p>
+                <h3 class="text-5xl text-secundary-color font-bold text-center py-8">ACCEDE A TODOS NUESTROS CURSOS</h3>
+                <p class="text-3xl text-btn-color-secondary text-center mb-8"> Elige la opción que mejor se adapte a ti</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ">
                     <!-- GRID 01 -->
                     <div class="border rounded-lg shadow-lg shadow-secundary-color bg-btn-color-primary text-secundary-color">
@@ -85,24 +84,28 @@
         </div>
      </section>
 
-      <!-- Footer -->
-    <footer class="bg-secundary-color w-full h-auto">
-        <div class="text-light-color container mx-auto h-auto flex flex-col sm:flex-row justify-between items-center text-lg py-4">
+    <!-- Footer -->
+    <footer class="bg-secundary-color w-full h-auto font-montserrat">
+        <div class="text-light-color container mx-auto h-auto flex flex-col sm:flex-row justify-between items-center text-sm py-4">
             <!-- Redes -->
-            <div class="px-8">
-                <a href="https://www.facebook.com/GuimarbotPeru/" target="_blank" class="text-xl pr-4">
+            <div class="px-8 pb-2 sm:pb-0">
+                <a href="https://www.facebook.com/GuimarbotPeru/" target="_blank" class="text-lg pr-4">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
-                <a href="#" class="text-xl pr-4">
+                <a href="#" class="text-lg pr-4">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
-                <a href="#" class="text-xl pr-4">
+                <a href="#" class="text-lg pr-4">
                     <i class="fa-brands fa-twitter"></i>
                 </a>
             </div>
             <!-- Copyright -->
-            <div>
-                <p>&copy;Copyright  Academia Guimarbot 2024</p>
+            <div class="pb-2 sm:pb-0">
+                <p>&copy; Copyright  Academia Guimarbot 2024</p>
+            </div>
+            <!-- Politica -->
+            <div class="pb-2 sm:pb-0">
+                <a href="#">Terminos y Condiciones</a>
             </div>
         </div>
     </footer>

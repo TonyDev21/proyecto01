@@ -5,6 +5,6 @@
 
 @layer components{
         .btn{
-            @apply border-transparent rounded-md py-1 px-2.5 bg-btn-color-primary text-secundary-color hover:bg-btn-color-secondary hover:text-white transition duration-200;
+            @apply font-montserrat font-medium border-transparent rounded-md py-1 px-2.5 bg-btn-color-primary text-secundary-color hover:bg-btn-color-secondary hover:text-white transition duration-300;
         }
 }
