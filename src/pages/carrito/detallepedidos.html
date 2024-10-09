@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4cc1d373f1.js" crossorigin="anonymous"></script>
+    <title>Perfil | Guimarbot</title>
+</head>
+<body>
+    <!-- Barra Nav -->
+    <header class="bg-secundary-color">
+       <nav class="container mx-auto flex justify-around sm:justify-between items-center">
+           <!-- Logo -->
+           <a href="../biblioteca/miscursos.html" class="flex items-center" >
+               <img src="../../images/logo_color_white.svg" class="h-20">
+               <p class="text-light-color text-2xl font-montserrat font-normal">GuimCodeX</p>
+           </a>
+   
+           <!-- Menu Hamburguesa  -->
+           <button class="flex lg:hidden" onclick="toggleMenu();">
+               <img src="../../images/burger-menu-white.svg" class="h-12" alt="menu">
+           </button>
+   
+           <!-- Menu -->
+           <ul id="menu" class="lg:flex hidden pt-4 flex-grow lg:flex-grow-0 gap-x-8 text-2xl lg:justify-center lg:items-center absolute lg:relative lg:top-0 top-20 
+           left-0 bg-secundary-color w-full h-screen lg:h-auto lg:w-auto py-14 lg:py-0 px-8 text-center lg:text-left z-50">
+               <li class="mb-7 lg:mb-0"><a href="../shop/cursosShop.html" class="font-montserrat font-normal text-white hover:text-btn-color-primary transition duration-300">Cursos</a></li>
+               <li class="mb-7 lg:mb-0"><a href="../shop/planesShop.html" class="font-montserrat font-normal text-white hover:text-btn-color-primary transition duration-300">Planes</a></li>
+               <li class="mb-7 lg:mb-0"><a href="../biblioteca/miscursos.html" class="font-montserrat font-normal text-white hover:text-btn-color-primary transition duration-300">Mi Biblioteca</a></li>
+               <li class="mb-7 lg:mb-0">
+                   <a href="../carrito/detallepedidos.html" class="font-montserrat font-normal text-white hover:text-btn-color-primary transition duration-300">
+                       <i class="fa-solid fa-cart-shopping"> ( 0 ) </i>
+                   </a>
+               </li>
+               <li class="mb-7 lg:mb-0"><a href="../perfil/editar.html" class="font-montserrat font-normal text-white hover:text-btn-color-primary transition duration-300">Mi Perfil</a></li>
+           </ul>
+       </nav>
+   </header>
+
+   <!-- Detalle Pedidos -->
+    <section class="bg-gradient-to-b from-secundary-color to-primary-color w-full h-auto font-montserrat min-h-screen">
+        <div class="container px-5 py-8 mx-auto flex justify-center items-center">
+            <div class="w-4/5 font-montserrat flex flex-col lg:flex-row ">
+                <!-- Detalle Pedidos-->
+                <div class="w-full lg:w-1/2 ">
+                    <h4 class="text-5xl text-extra-color font-bold text-center py-8">Resumen de tu pedido</h4>
+                    <!-- Pedidos -->
+                    <div class="w-full h-auto flex flex-col">
+                        <!-- Card 01 -->
+                        <div class="p-4 w-full rounded-lg mb-4 bg-secundary-color shadow shadow-extra-color">
+                            <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                              <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="../../images/cursoJavascript.svg">
+                              <div class="flex-grow sm:pl-8">
+                                <h3 class="text-extra-color font-bold ">Javascript: De Novato a Ninja</h3>
+                              </div>
+                              <div>
+                                <span class="text-extra-color font-bold ">s/4.99</span>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- Card 02 -->
+                        <div class="p-4 w-full rounded-lg mb-4 bg-secundary-color shadow shadow-extra-color">
+                            <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                              <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="../../images/cursoPython.svg">
+                              <div class="flex-grow sm:pl-8">
+                                <h3 class="text-extra-color font-bold ">Python: De Novato a Ninja</h3>
+                              </div>
+                              <div>
+                                <span class="text-extra-color font-bold ">s/4.99</span>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-2 flex justify-between px-4  rounded-lg mb-4 bg-secundary-color shadow shadow-extra-color">
+                        <p class="text-extra-color font-semibold">Total</p>
+                        <span class="text-extra-color font-semibold">s/9.98</span>
+                    </div>
+                </div>
+                <!-- Metodo pago -->
+                <div class=" w-full lg:w-1/2">
+                    <h4 class="text-5xl text-extra-color font-bold text-center py-8">&nbsp;</h4>
+                    <div class="w-full h-auto flex justify-end items-end">
+                        <!-- Card -->
+                        <div class="p-4 w-full lg:w-3/4 rounded-lg mb-4 bg-secundary-color shadow shadow-extra-color  ">
+                            <div class="h-full flex flex-col items-center  justify-center text-center ">
+                                <h3 class="text-extra-color font-semibold pb-4">Completa la compra</h3>
+                                <a href="../carrito/pago.html" class="btn py-4">Continuar al pago</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+   <footer class="bg-secundary-color w-full h-auto font-montserrat">
+       <div class="text-light-color container mx-auto h-auto flex flex-col sm:flex-row justify-between items-center text-sm py-4">
+           <!-- Redes -->
+           <div class="px-8 pb-2 sm:pb-0">
+               <a href="https://www.facebook.com/GuimarbotPeru/" target="_blank" class="text-lg pr-4">
+                   <i class="fa-brands fa-facebook"></i>
+               </a>
+               <a href="#" class="text-lg pr-4">
+                   <i class="fa-brands fa-youtube"></i>
+               </a>
+               <a href="#" class="text-lg pr-4">
+                   <i class="fa-brands fa-twitter"></i>
+               </a>
+           </div>
+           <!-- Copyright -->
+           <div class="pb-2 sm:pb-0">
+               <p>&copy; Copyright  Academia GuimCodeX 2024</p>
+           </div>
+           <!-- Politica -->
+           <div class="pb-2 sm:pb-0">
+               <a href="#">Terminos y Condiciones</a>
+           </div>
+       </div>
+   </footer>
+   <script src="../../main.js"></script>
+</body>

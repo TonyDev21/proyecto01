@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4cc1d373f1.js" crossorigin="anonymous"></script>
+    <title>Cursos | GuimCodeX</title>
+</head>
+<body>
+    <!-- Barra Nav -->
+    <header class="bg-secundary-color">
+        <nav class="container mx-auto flex justify-around sm:justify-between items-center">
+            <!-- Logo -->
+            <a href="../../index.html" class="flex items-center" >
+                <img src="../images/logo_color_white.svg" class="h-20">
+                <p class="text-light-color text-2xl font-montserrat font-normal">GuimCodeX</p>
+            </a>
+    
+            <!-- Menu Hamburguesa  -->
+            <button class="flex lg:hidden" onclick="toggleMenu();">
+                <img src="../images/burger-menu-white.svg" class="h-12" alt="menu">
+            </button>
+    
+            <!-- Menu -->
+            <ul id="menu" class="lg:flex hidden pt-4 flex-grow lg:flex-grow-0 gap-x-8 text-2xl lg:justify-center lg:items-center absolute lg:relative lg:top-0 top-20 
+            left-0 bg-secundary-color w-full h-screen lg:h-auto lg:w-auto py-14 lg:py-0 px-8 text-center lg:text-left z-50">
+                <li class="mb-7 lg:mb-0"><a href="../../index.html" class="font-montserrat font-normal text-white hover:text-btn-color-primary transition duration-300">Inicio</a></li>
+                <li class="mb-7 lg:mb-0"><a href="cursos.html" class="font-montserrat font-normal text-white hover:text-btn-color-primary transition duration-300">Cursos</a></li>
+                <li class="mb-7 lg:mb-0"><a href="planes.html" class="font-montserrat font-normal text-white hover:text-btn-color-primary transition duration-300">Planes</a></li>
+                <li><a href="login.html" class="btn">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Beca -->
+    <section class="bg-gradient-to-b from-secundary-color to-primary-color w-full h-auto"> 
+        <div class="container mx-auto py-12">
+            <!-- Título y Descripción -->
+            <div class="text-center mb-8">
+              <h1 class="text-5xl font-bold text-extra-color">Aplica a Nuestra Beca</h1>
+              <p class="text-xl text-light-color font-semibold mt-2">
+                Sigue los siguientes pasos para aplicar a nuestra beca.
+                Solo necesitas ver dos videos gratuitos y llenar el formulario.
+              </p>
+            </div>
+          
+            <!-- Seccion de Videos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <!-- Video 1 -->
+              <div class="bg-secundary-color shadow-lg rounded-lg p-4">
+                <h3 class="text-xl text-extra-color font-semibold mb-2">Video 1: Introducción a la Beca</h3>
+                <video controls class="w-full rounded-lg">
+                  <source src="../video/production_id 3910618 (1080p).mp4" type="video/mp4">
+                  Tu navegador no soporta la reproducción de videos.
+                </video>
+              </div>
+          
+              <!-- Video 2 -->
+              <div class="bg-secundary-color shadow-lg rounded-lg p-4">
+                <h3 class="text-xl text-extra-color font-semibold mb-2">Video 2: Cómo Aplicar Correctamente</h3>
+                <video controls class="w-full rounded-lg">
+                  <source src="../video/production_id 3910618 (1080p).mp4" type="video/mp4">
+                  Tu navegador no soporta la reproducción de videos.
+                </video>
+              </div>
+            </div>
+          
+            <!-- Sección de Formulario -->
+            <div class="bg-white shadow-lg rounded-lg p-8">
+              <h2 class="text-2xl font-semibold mb-6">Formulario de Aplicación</h2>
+              <form action="/ruta-de-envio" method="POST">
+                <!-- Nombre Completo -->
+                <div class="mb-4">
+                  <label for="name" class="block text-gray-700 font-semibold">Nombre Completo:</label>
+                  <input type="text" id="name" name="name" class="w-full mt-2 p-3 border border-gray-300 rounded-md focus:ring focus:ring-indigo-200">
+                </div>
+          
+                <!-- Correo Electrónico -->
+                <div class="mb-4">
+                  <label for="email" class="block text-gray-700 font-semibold">Correo Electrónico:</label>
+                  <input type="email" id="email" name="email" class="w-full mt-2 p-3 border border-gray-300 rounded-md focus:ring focus:ring-indigo-200">
+                </div>
+          
+                <!-- Motivo de Aplicación -->
+                <div class="mb-6">
+                  <label for="reason" class="block text-gray-700 font-semibold">Motivo de Aplicación:</label>
+                  <textarea id="reason" name="reason" rows="4" class="w-full mt-2 p-3 border border-gray-300 rounded-md focus:ring focus:ring-indigo-200"></textarea>
+                </div>
+          
+                <!-- Botón de Enviar -->
+                <div class="text-center">
+                  <button type="submit" class="bg-indigo-500 text-white py-3 px-6 rounded-lg hover:bg-indigo-600">
+                    Enviar Solicitud
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+    </section>
+    <!-- Footer -->
+    <footer class="bg-secundary-color w-full h-auto font-montserrat">
+        <div class="text-light-color container mx-auto h-auto flex flex-col sm:flex-row justify-between items-center text-sm py-4">
+            <!-- Redes -->
+            <div class="px-8 pb-2 sm:pb-0">
+                <a href="https://www.facebook.com/GuimarbotPeru/" target="_blank" class="text-lg pr-4">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" class="text-lg pr-4">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#" class="text-lg pr-4">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+            <!-- Copyright -->
+            <div class="pb-2 sm:pb-0">
+                <p>&copy; Copyright  Academia GuimCodeX 2024</p>
+            </div>
+            <!-- Politica -->
+            <div class="pb-2 sm:pb-0">
+                <a href="#">Terminos y Condiciones</a>
+            </div>
+        </div>
+    </footer>
+
+</body>

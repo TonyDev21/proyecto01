@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4cc1d373f1.js" crossorigin="anonymous"></script>
-    <title>Iniciar Sesión | Guimarbot</title>
+    <title>Iniciar Sesión | GuimCodeX</title>
 </head>
 <body class="flex flex-col min-h-screen">
     <!-- Barra Nav -->
@@ -17,7 +17,7 @@
             <!-- Logo -->
             <a href="../../index.html"  class="flex items-center" >
                 <img src="../images/logo_color_white.svg" class="h-20">
-                <p class="text-light-color text-2xl font-montserrat font-normal">GuímarBot</p>
+                <p class="text-light-color text-2xl font-montserrat font-normal">GuimCodeX</p>
             </a>
     
             <!-- Menu Hamburguesa  -->
@@ -44,17 +44,17 @@
                     <img src="../images/logo_color_white.svg" class="w-44 mx-auto" alt="logo">
                 </div>
                 <div class="w-4/5 xl:w-3/4" >
-                    <form action="POST">
+                    <form id="loginForm"">
                         <div class="flex flex-col space-y-4 mb-4">
                             <label for="email" class="text-extra-color font-bold">Correo Electronico</label>
-                            <input type="email" name="email" id="email"  class="py-1 border rounded-md focus:outline-none focus:border-sky-500 focus:ring-sky-500 placeholder:pl-4" placeholder="Escribe tu correo electronico" required>
+                            <input id="email" type="email" name="email" id="email"  class="py-1 border rounded-md focus:outline-none focus:border-sky-500 focus:ring-sky-500 placeholder:pl-4" placeholder="Escribe tu correo electronico" required>
                         </div>
                         <div class="flex flex-col space-y-4 mb-4" >
                             <label for="password" class="text-extra-color font-bold">Contraseña</label>
-                            <input type="password" name="password" id="password"  class="py-1 border rounded-md focus:outline-none focus:border-sky-500 focus:ring-sky-500 placeholder:pl-4" placeholder="Escribe tu contraseña" required>
+                            <input id="password" type="password" name="password" id="password"  class="py-1 border rounded-md focus:outline-none focus:border-sky-500 focus:ring-sky-500 placeholder:pl-4" placeholder="Escribe tu contraseña" required>
                         </div>
                         <div class="flex flex-col items-center">
-                            <input type="submit"value="Enviar" class="btn max-w-40 py-3 px-10 bg-extra-color text-light-color cursor-pointer">
+                            <input type="submit"value="Enviar" class="btn max-w-40 py-3 px-10 bg-extra-color text-light-color cursor-pointer" onclick="loguear(event)">
                         </div>
                     </form>
                 </div>
@@ -83,7 +83,7 @@
             </div>
             <!-- Copyright -->
             <div class="pb-2 sm:pb-0">
-                <p>&copy; Copyright  Academia Guimarbot 2024</p>
+                <p>&copy; Copyright  Academia GuimCodeX 2024</p>
             </div>
             <!-- Politica -->
             <div class="pb-2 sm:pb-0">

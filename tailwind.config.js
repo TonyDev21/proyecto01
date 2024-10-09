@@ -16,6 +16,8 @@ module.exports = {
       },
       backgroundImage:{
         'banner-curso': "url('https://res.cloudinary.com/dxnx6awui/image/upload/v1728301083/vlzoggbev4dgzvrpjpzu.jpg')",
+        'banner-beca': "url('https://res.cloudinary.com/dxnx6awui/image/upload/v1728428608/banner-beca_qcy4tz.png')",
+        'banner-js': "url('https://res.cloudinary.com/dxnx6awui/image/upload/v1728473770/banner-js_jrvtzj.svg')"
       }
     },
   },
